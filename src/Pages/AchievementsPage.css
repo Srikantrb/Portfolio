@@ -1,0 +1,81 @@
+.achievementspage{
+    width: 100%;
+    height: 100%;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    animation: achievementspage_anm 1s ease;
+}
+.achp_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.achp_header > h1{
+    font-size: 44px;
+    font-weight: 550;
+    margin-top: 20px;
+}
+.achp_body{
+    background-color: rgb(204, 187, 187);
+    margin-top: 30px;
+    width: 67vw;
+    height: 450px;
+    overflow-y: scroll;
+    position: relative;
+    animation: achievementsconatainer_anm 1.3s ease;
+}
+.achp_body::-webkit-scrollbar{
+    display: none;
+}
+.achp_body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.achp_itemblock{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    z-index: 3;
+    border-radius: 5px;
+    font-size: larger;
+    animation: achievement_anm 1.6s ease;
+}
+
+
+
+/* Animations */
+@keyframes achievementspage_anm{
+    from{
+        margin-left: -1000px;
+    }
+    to{
+        margin-left: 0px;
+    }
+
+}
+@keyframes achievementsconatainer_anm{
+    from{
+        margin-right: -1000px;
+    }
+    to{
+        margin-right: 0px;
+    }
+
+}
+@keyframes achievement_anm{
+    from{
+        margin-bottom: -1000px;
+    }
+    to{
+        margin-bottom: 10px;
+    }
+
+}

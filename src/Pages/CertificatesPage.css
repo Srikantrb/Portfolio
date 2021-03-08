@@ -1,0 +1,94 @@
+.certificatespage{
+    width: 100%;
+    height: 100%;
+    background-color: chocolate;
+    position: relative;
+    animation: certificatespage_anm 1s ease;
+}
+.certificate_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.certificate_header > h1{
+    font-size: 44px;
+    font-weight: 550;
+    margin-top: 20px;
+}
+.certificate_body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.certificateimg_container{
+    /* background-color: black; */
+    width: 50vw;
+    height: 70vh;
+    /* object-fit: contain; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    position: relative;
+    animation: certificates_anm 1.3s ease;
+}
+.certificateimg_container > img{
+    width: 100%;
+    height: 100%;
+    /* flex: 1; */
+    /* object-fit: cover; */
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+}
+.navbtn_conatiner{
+    /* cursor: pointer; */
+}
+.navbtn_conatiner > button{
+    background-color: transparent;
+    cursor: pointer; 
+    outline: none;
+    border: none;
+    transition: transform 250ms ease-in ;
+}
+.navbtn_conatiner > button:hover{
+    transform: scale(1.20);
+    color: rgb(255, 255, 92);
+}
+
+.rightbtn >button{
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: transform 250ms ease-in ;
+}
+.rightbtn >button:hover{
+    transform: scale(1.15);
+    color: rgb(255, 255, 92);
+}
+
+
+/* Animations */
+@keyframes certificatespage_anm{
+    from{
+        margin-left: -1000px;
+    }
+    to{
+        margin-left: 0px;
+    }
+
+}
+@keyframes certificates_anm{
+    from{
+        margin-right: -1000px;
+    }
+    to{
+        margin-right: 0px;
+    }
+
+}

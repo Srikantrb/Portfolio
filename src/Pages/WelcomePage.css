@@ -1,0 +1,115 @@
+.welcomepage{
+    flex: 0.78;
+    animation: welcomepage_anm 1.5s ease 1 forwards;
+}
+.welcomepage_container{
+    background-color: chocolate;
+
+    height: 100vh;
+    padding-top: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* position: relative;
+    left: -5px; */
+}
+.welcomepage_name >h1{
+    font-size: 43px;
+    font-weight: 500;
+}
+.welcomepage_container >hr{
+    width: 436px;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+.welcomepage_skills{
+    margin-bottom: 30px;
+}
+.welcomepage_skills>p{
+    font-size: 24px;
+    font-weight: 500;
+}
+.welcomepage_profiletag{
+    margin-bottom: 30px;
+}
+.welcomepage_profiletag>p{
+    font-size: 24px;
+    font-weight: 500;
+    width: max-content;
+}
+.welcomepage_info{
+    position: absolute;
+    bottom: 90px;
+    margin-bottom: 20px;
+}
+.welcomepage_info >p{
+    font-size: 24px;
+    font-weight: 600px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wp_link{
+    text-decoration: none;
+    width: 100%;
+    /* background-color: black; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcomepage_navigator{
+    /* background-color: turquoise; */
+
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+    animation: wpnavigator 800ms infinite;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcomepage_navigator:hover{
+    color: green;
+}
+.welcomepage_navigator >p{
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: -10px;
+}
+.navigator_icon{
+    font-size: 60px !important;
+}
+
+@keyframes wpnavigator{
+    0% {
+        bottom: 10px;
+    }
+    50% {
+        bottom: 2px;
+    }
+    100% {
+        bottom: 10px;
+    }
+
+}
+
+
+
+/* Animation */
+@keyframes welcomepage_anm{
+    from{
+    /* opacity: 1; */
+    margin-top: -1000px;
+    }
+    to{
+        margin-top: 0px;
+        /* opacity: 0; */
+    }
+}

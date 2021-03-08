@@ -1,0 +1,34 @@
+.formnavbar{
+    background-color: brown;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.formnavbar_container{
+    background-color: burlywood;
+
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    padding-top:5px;
+    padding-bottom:10px;
+}
+.formnavbar_section{
+    display: block;
+    cursor: pointer;
+    padding: 3px;
+    border: 1px solid green;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+}
+.formnavbar_section:hover{
+    background-color: chocolate;
+}
+.formnavbar_section:active{
+    background-color: cornflowerblue;
+    border-right:none ;
+}

@@ -1,0 +1,15 @@
+.achievementsform_container{
+    padding: 10px;
+    height: 80vh;
+    animation: achievements_anm 1s ease;
+}
+
+/* Animations */
+@keyframes achievements_anm{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,83 @@
+.basicinfoform_container{
+/* background-color: blue; */
+    padding: 10px;
+    height: 80vh;
+    position: relative;
+    animation: basicinfo_anm 1s ease;
+}
+.basicuserinfo_container,
+.tags_container,
+.links_container,
+.profilepic_container{
+    margin: 10px;
+}
+.tags_container{
+    display: flex;
+    flex-direction: column;
+}
+.tagsinput_conatiner{
+display: flex;
+justify-content: space-between;
+}
+.taginput_block{
+    width: 30%;
+}
+.taginput_block>input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid lightgrey;
+}
+.input_block{
+    display: flex;
+    flex-direction: column;
+}
+.input_block>label,
+.tags_container>label
+{
+    margin-bottom: 2px;
+    color: blue;
+}
+.input_block>input{
+    width: 30%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    outline: none;
+}
+.input_block>input:focus,
+.taginput_block>input:focus
+{
+    border:1px solid rgb(82, 82, 243);
+    /* outline: none; */
+}
+.submitform_btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.submitform_btn>button{
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgb(17, 17, 197);
+    color: white;
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+}
+
+
+/* Animations */
+@keyframes basicinfo_anm {
+    from {
+    margin-right: -1000px;
+    }
+    to{
+    margin-right: 0px;
+    }
+}

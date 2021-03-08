@@ -1,0 +1,22 @@
+.skillcontainer{
+    background-color: rgb(49, 45, 45);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.skillcontainer > h2{
+    color: red;
+}
+.skillcontainer > hr{
+    width: 90%;
+    margin-bottom: 10px;
+}
+.skill_item{
+    font-weight: 500;
+    margin-bottom: 5px;
+}

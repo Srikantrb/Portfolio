@@ -1,0 +1,115 @@
+.homepage{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    background: url("background/1385324.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.homepage_container{
+    width: 400px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: brown; */
+    /* background-color: black; */
+    background-color: transparent;
+    /* z-index: 2; */
+    color: white;
+    display: flex;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6),
+                0 4px 5px 0 rgba(0, 0, 0, 0.6);
+    animation: homepage_anm 1.5s ease;
+}
+
+.homepage_container >h1{
+    padding-bottom: 5px;
+    
+}
+.name{
+    position: relative;
+    top: -20px;
+}
+.name >h1{
+    margin-bottom: 10px;
+    color: white;
+    transition: 250ms ease-in-out;
+}
+.name >h1:hover{
+    color: red;
+    letter-spacing: 2px;
+}
+.homepage_container >p{
+    padding-bottom: 10px;
+    font-size: larger;
+    font-weight: 400;
+}
+.typical{
+    /* font-size: 50px; */
+    color: chocolate;
+}
+.location >h2{
+    margin-top: 20px;
+    color: white;
+}
+.homepage_container > button{
+    margin-top: 10px;
+    width: 250px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: orangered;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.4),
+                0 3px 3px 0 rgba(0, 0, 0, 0.4);
+    font-size:25px ;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms ease-in-out;
+}
+.homepage_container > button:hover{
+    transform: scale(1.02);
+}
+.hpbtn_icon{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    position: relative;
+    animation: downarrowanimation 700ms infinite;
+}
+
+/* Animations */
+@keyframes downarrowanimation{
+    0%{
+        top: -5px;
+    }
+    50%{
+        top: 5px;
+    }
+    100%{
+        top: -5px;
+    }
+}
+@keyframes homepage_anm{
+    from{
+        margin-top: -1000px;
+    }
+    to{
+        margin-top: 0px;
+    }
+}

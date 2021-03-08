@@ -1,0 +1,60 @@
+.declarationform_container{
+    padding: 10px;
+    /* background-color: hotpink; */
+    position: relative;
+    height: 80vh;
+    animation: certproj_anm 1s ease;
+}
+.decinput_block>input{
+    cursor: pointer;
+}
+.inputcheck_block{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 10px;
+}
+.inputcheck_block>input{
+    margin-right: 10px;
+}
+.declfooter{
+    /* background-color: green; */
+    width: 66vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    
+}
+
+.location_block{
+    display: flex;
+    justify-content: space-between;
+}
+.location_block>input{
+    padding: 4px;
+    border: 1px solid gray;
+}
+.location_block>input:focus{
+    border: 1px solid blue;
+    outline: none;
+}
+.submit_btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.submit_btn>button{
+    padding: 3px;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(17, 17, 197);
+    color: white;
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+}

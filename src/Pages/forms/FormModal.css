@@ -1,0 +1,24 @@
+.form_modal_container{
+    position: relative;
+    /* background-color: chocolate; */
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+}
+.certmodal_body{
+    display: flex;
+    overflow-x: scroll;
+}
+.modal_footer{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.modal_footer>button{
+    cursor: pointer;
+}
+.mdata_container{
+    display: flex;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}

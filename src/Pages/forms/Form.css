@@ -1,0 +1,84 @@
+.form{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    bottom: 10px;
+}
+
+.form_container{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: burlywood;
+    width: 90vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; 
+  
+}
+.form_header{
+    background-color: lightgrey;
+    width: 100%;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    animation: formheader_anm 1.3s ease;
+}
+.form_nav_icons,
+.form_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.form_icon{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.form_icon>a{
+    text-decoration: none;
+}
+.form_icon>a:hover{
+    color: blue;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.form_body{
+    background-color: lavender;
+    width:100%;
+    height: 100%;
+    display: flex;
+}
+.form_navbar{
+    flex: 0.22;
+    border-right: 1px solid black;
+}
+.form_body_container{
+    flex: 0.78;
+    overflow-y: scroll;
+   
+}
+
+
+/* Animations */
+@keyframes form_anm {
+    from {
+    margin-right: -1000px;
+    }
+    to{
+    margin-right: 0px;
+    }
+}
+@keyframes formheader_anm {
+    from {
+    margin-left: -1000px;
+    }
+    to{
+    margin-left: 0px;
+    }
+}

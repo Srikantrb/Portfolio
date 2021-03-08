@@ -1,0 +1,20 @@
+.projectsform_container{
+    padding: 10px;
+    height: 80vh;
+    animation: certproj_anm 1s ease;
+}
+#cp1,#cp2,#cp3,
+#ip1,#ip2,#ip3{
+    margin-bottom: 3px;
+}
+
+
+/* Animations */
+@keyframes certproj_anm {
+    from {
+    margin-top: -1000px;
+    }
+    to{
+    margin-top: 0px;
+    }
+}
